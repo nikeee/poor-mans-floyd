@@ -4,6 +4,8 @@ Floyd's algorithm implemented for an array as well as a directed graph where eve
 
 Seen in this video: https://www.youtube.com/watch?v=pKO9UjSeLew
 
+While I was browsing GitHub, I found [this repository](https://github.com/maciej-nowak/ITS-Floyd-Cycle-Detection). It uses floyd's cycle detection to find hash collisions. It might be interesting as further reading and practical application of this algorithm.
+
 ## Benchmarking Result
 
 ### Memory Usage
