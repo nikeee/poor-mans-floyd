@@ -91,23 +91,23 @@ def generate_problem(n: int, max_duplicate_count: int = 10):
 
 
 def main():
-
     # data = [3, 1, 3, 4, 2]
-    data = generate_problem(10000000, 100000)
-    # print(data)
-    # print(sorted(data))
+    data = generate_problem(10000000, 1000)
 
-    c = find_cycle_sort(data)
+    # c = find_cycle_sort(data)
+    # print(f'find_cycle_sort(data): {c}')
     d = timeit.timeit(lambda: find_cycle_sort(data), number=10)
-    print(f'Duplicate item (sort): {c} (in {d}s)')
+    print(f'find_cycle_sort(data):\t{d}s')
 
-    c = find_cycle_set(data)
+    # c = find_cycle_set(data)
+    # print(f'find_cycle_set(data): {c}')
     d = timeit.timeit(lambda: find_cycle_set(data), number=10)
-    print(f'Duplicate item (set): {c} (in {d}s)')
+    print(f'find_cycle_set(data):\t{d}s')
 
-    c = find_cycle_floyd(data)
+    # c = find_cycle_floyd(data)
+    # print(f'find_cycle_floyd(data): {c}')
     d = timeit.timeit(lambda: find_cycle_floyd(data), number=10)
-    print(f'Duplicate item (floyd): {c} (in {d}s)')
+    print(f'find_cycle_floyd(data):\t{d}s')
 
 if __name__ == "__main__":
     main()
